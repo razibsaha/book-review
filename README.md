@@ -11,8 +11,11 @@
 #### ⚫ React custom hook used on the project to reduce redundancy. It's call DRY(Don't repeat yourself). 
 #### ⚫ The fake reviews and images were collected from various websites across the internet
 #### ⚫ TailwindCSS is used as CSS framework as it is gaining popularity over the last few years 
+<<<<<<< HEAD
 
 #### ⚫ Custom Links used for Active Route
+=======
+>>>>>>> 654aef023856749a90cc6c292ba04ea92e988240
 
 
 ### Goodread
