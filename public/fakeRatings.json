@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name":"J.L. Sutton",
+        "age": 58,
+        "image": "./images/user01.jpg",
+        "rating": 4,
+        "review": "By this point, I've read several Haruki Murakami books. I've really come to appreciate not only his use of language and the meditative quality he evokes, but also the sense of the surreal. Frankly, I like the convoluted twists and turns, the improbable histories and even the talking cats. One of his earlier novels, Norwegian Wood is well-written and has a fairly straightforward plot. It also had that reflective quality I like. So I knew I was reading Murakami, but I wanted the protagonist to look up into the sky and see two moons or have some other reality bleed into our own reality. Was it good? Yes, it's Murakami. This might even be a novel that's preferable to some readers. However, I prefer later novels like 1Q84 and the Windup Bird Chronicle."
+    },
+    {
+        "id": 2,
+        "name":"Apoorva",
+        "age": 28,
+        "image": "./images/user02.jpg",
+        "rating": 5,
+        "review": "Norwegian Wood begins with Toru Watanabe, a 37 year old man traveling to Hamburg. After hearing the 'Norwegian Wood' by Beatles, he is overcome with nostalgia and begins musing about his teenage years. At the age of 17, Kizuki, his best friend, decides to end his life leaving behind Toru and his girlfriend, Naoko, broken. Toru and Naoko bond after his death and Toru tries to offer emotional support to Naoko, falling in love with her in the process. But the death of Kizuki, whom Naoko loved ever since they were kids, sends her life in a downward spiral as she tries to come to terms with the incident. Her breakdown leads to her admission in a sanatorium."
+    },
+    {
+        "id": 3,
+        "name":"Kristin Myrtle",
+        "age": 34,
+        "image": "./images/user03.jpg",
+        "rating": 4,
+        "review": "I can't explain it! I want to inhale the pages of this book, grind them up, and snort them right up my nose! I want in placed directly in my brain, my very BLOODSTREAM! Murakami's words make me feel just like Nicole Kidman in that scene in Moulin Rouge where she is rolling around on that fur rug in her negligee, moaning and writhing in pleasure and saying 'Yes! Yes! Dirty words! More! More! Naughty words!' Although Murakami's words aren't so much naughty and dirty as they are prismatic and mysterious. I wish I could weave his sentences into a rug to roll around on. They're magical and mystical... they break my heart."
+    },
+    {
+        "id": 4,
+        "name":"Jessica",
+        "age": 21,
+        "image": "./images/user04.jpg",
+        "rating": 4,
+        "review": "imagine you are standing in the middle of the road. to the left is the past, lined with death. to the right is the future, paved with life. sometimes we become so focused on choosing one way over the other that we forget how interconnected the two are, that we cant go in one direction without having previously come from the other."
+    },
+    {
+        "id": 5,
+        "name":"Lou",
+        "age": 41,
+        "image": "./images/user05.jpg",
+        "rating": 5,
+        "review": "This Story is on one side a story of misadventure and a melancholic exploration of adolescent love and another side a thought-provoking and poignant study of memory, morality and mortality. Murakami never disappoints and always writes with a poetic richness that leaves almost every line hanging with symbolic possibility, loved it! The main protagonist takes you back to the 1960s and his youthful goings on with his peers, his adventures are steamy so comes with adult warning! The story is set in thriving Tokyo and also shifts location to a relaxed mountainous retreat. You really get to love the characters that Murakami creates which I also felt with his other novel The Wind-Up Bird Chronicle. To think that his works have been translated from Japanese into English and still hold a poetic and deeply thought-provoking quality is truly mesmerising stuff. It's by no means just a love story. This story is more about lived experiences, where his other novels have tones of supernatural and incorporated mind games. The book title if you are wondering is taken from a Beatles track 'Norwegian Wood' which is one of the novel's characters favourite songs."
+    },
+    {
+        "id": 6,
+        "name":"John Mauro",
+        "age": 32,
+        "image": "./images/user06.jpg",
+        "rating": 4,
+        "review": "Even so, my memory has grown increasingly distant, and I have already forgotten any number of things. Writing from memory like this, I often feel a pang of dread. What if I've forgotten the most important thing? ... Naoko herself knew, of course. She knew that my memories of her would fade. Which is precisely why she begged me never to forget her, to remember that she had existed. The thought fills me with an almost unbearable sorrow. Because Naoko never loved me."
+    },
+    {
+        "id": 7,
+        "name":"MJ Nicholls",
+        "age": 24,
+        "image": "./images/user07.jpg",
+        "rating": 5,
+        "review": "I don't have many meaningful things to say about Norwegian Wood. First, a disclaimer. This is, by no means, a romance book - no offence meant. I cannot suffer to attach such a tacky word on this book. Oh, what do I know, it IS a romance book. But it is laterally more than that.Like Dickens, Murakami fuels his potboiler with death of the innocent. Each one is offing herself. That's right. What really matters is the subtext. In all superficial opinion, Watanabe is having a normal college life. But though the actions of his peers unravel with robotic neatness, in the background there's chaos going on.Watanabe's best bud, Nagasawa, plays the devil's advocate. Showing himself as an evil guy, which he partially is, he prompts and tempts and gauges. He teases with Watanabe's rhythm of orderliness.But stuff was happening before they met. The one humanitarian thing that Watanabe does, in the hospital, attending upon Midori's dad, is hefty in its purity. That's what lacks in classical literature, ambivalent people who have their own set of morals. People who still are heroes."
+    },
+    {
+        "id": 8,
+        "name":"Adam Dalva",
+        "age": 60,
+        "image": "./images/user08.jpg",
+        "rating": 5,
+        "review": "The second feature was a fairly normal sex flick, which meant it was even more boring than the first. It had lots of oral sex scenes, and every time they started doing fellatio or cunnilingus or sixty-nine the soundtrack would fill the theater with loud sucking or slurping sound effects. Listening to them, I felt strangely moved to think that I was living out my life on this odd planet of ours."
+    }
+
+]
