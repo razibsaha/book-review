@@ -6,11 +6,11 @@
 
 
 
-#### This is a book review website
-#### React router is the core aspect of this website along with other functionality
-#### React custom hook used on the project to reduce redundancy. It's call DRY(Don't repeat yourself). 
-#### The fake reviews and images were collected from various websites across the internet
-#### TailwindCSS is used as CSS framework as it is gaining popularity over the last few years 
+#### ⚫ This is a book review website
+#### ⚫ React router is the core aspect of this website along with other functionality
+#### ⚫ React custom hook used on the project to reduce redundancy. It's call DRY(Don't repeat yourself). 
+#### ⚫ The fake reviews and images were collected from various websites across the internet
+#### ⚫ TailwindCSS is used as CSS framework as it is gaining popularity over the last few years 
 
 
 # Goodread
