@@ -3,8 +3,6 @@
 
 # Live Website Link 
 (Netlify) : [https://norwegian-wood.netlify.app/](https://norwegian-wood.netlify.app/)
-https://norwegian-wood.netlify.app/
-
 
 
 
