@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>Norwegian Wood</h1>
-      <h4>A novel by Haruki <Murakami></Murakami></h4>
+      <h4>A novel by Haruki Murakami</h4>
     </div>
   );
 }

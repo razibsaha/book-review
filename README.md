@@ -13,4 +13,9 @@
 # Goodread
 Find more on Goodread : [https://www.goodreads.com/book/show/11297.Norwegian_Wood](https://www.goodreads.com/book/show/11297.Norwegian_Wood)
 
+Live Website Link (Netlify) : [https://norwegian-wood.netlify.app/](https://norwegian-wood.netlify.app/)
+
+https://norwegian-wood.netlify.app/
+
+
 
