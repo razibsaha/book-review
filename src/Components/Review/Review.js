@@ -6,17 +6,50 @@ const Review = (props) => {
 
     const {age,id,image,rating,review,name} = props.review;
     return (
-        <div className='container mx-auto p-5 py-10 md:flex'>
-                <div className='profile-container pr-5 mt-12'>
-                    <img className='w-.25/3' width="150px" src={image} alt="" />
-                    <p className='book font-bold 3xl'>{name}</p>
-                    <span>Id: {id} || Age: {age}</span>
+        
+        <div className='flex justify-center items-center'>
+                <div className="mx-auto p-5 py-10">
+                <div className="profile-container pr-5 mt-0">
+                  <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-end px-4 pt-4"></div>
+                    <div class="flex flex-col items-center pb-10">
+                      <img className='h-[400px] rounded-lg mb-5 -mt-5 object-cover' src={image} alt={image} />
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                        {name}
+                      </h5>
+                      <span class="mb-1 text-md text-slate-400 font-medium  dark:text-white">
+                        {" "}
+                        Age : {age} || Id : {id}
+                      </span>
+                      <span>
+                        <p>
+                          {rating === 5 ? (
+                            <span>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                            </span>
+                          ) : (
+                            <span className="orange">
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
+                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-slate-400"></FontAwesomeIcon>
+                            </span>
+                          )}
+                        </p>
+                      </span>
+                      <span class="text-sm text-gray-500 dark:text-gray-400 p-5">
+                        {review.slice(0, 300)}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div className='review-container mt-5 w-4/5'>
-                    <p>{rating === 5? <span className='orange'><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span> : <span className='orange'><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>}</p>
-                    <p>{review}</p>
-                </div>
-            </div>
+              </div>
+        </div>
+
     );
 };
 

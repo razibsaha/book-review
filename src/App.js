@@ -13,12 +13,12 @@ import Footer from './Components/Footer/Footer';
 function App() {
   
   return (
-    
-      <div  className='relative'>
-        <div className='container mx-auto'>
+    <div>
+      <div className='container mx-auto'>
+        <div>
         <Header></Header>
-      <div className="flex">
-      <Routes>
+      <div>
+      <Routes className='mb-20'>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/home' element={<Home/>}></Route>
         <Route path='/reviews' element={<Reviews/>}></Route>
@@ -29,8 +29,11 @@ function App() {
       </Routes>
     </div>
     </div>
-        <div className='relative bottom-0'>
+        
+      </div>
+      <div>
       <Footer></Footer>
+      
         </div>
       </div>
   );

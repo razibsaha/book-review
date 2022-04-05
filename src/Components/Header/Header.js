@@ -1,45 +1,35 @@
-import React from 'react';
-import 'flowbite';
-import CustomLink from '../CustomLink/CustomLink';
+import React, { useState } from "react";
+import CustomLink from "../CustomLink/CustomLink";
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
 
 const Header = () => {
-    return (
-      
-        
-<nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+  const [open, setOpen] = useState(false);
 
-<div className="container flex flex-wrap justify-between items-center mx-auto">
+  const routes = [
+    { id: 1, name: "Home", link: "/home" },
+    { id: 2, name: "Reviews", link: "/reviews" },
+    { id: 3, name: "Dashboard", link: "/dashboard" },
+    { id: 4, name: "Blog", link: "/blog" },
+    { id: 5, name: "About", link: "/about" },
+  ];
+  return (
 
-<a href="/">{<h1 className='text-xl text-red-600 font-bold'>Norwegian Wood Book Review</h1>}</a>
-
-<button data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
-<span className="sr-only">Open main menu</span>
-<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-<svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-</button>
-<div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-<ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium w-5/5">
-<li>
-<CustomLink to="/home">Home</CustomLink>
-</li>
-<li>
-<CustomLink to="/reviews">Reviews</CustomLink>
-</li>
-<li>
-<CustomLink to="/dashboard">Dashboard</CustomLink>
-</li>
-<li>
-<CustomLink to='/blog'>Blog</CustomLink>
-</li>
-<li><CustomLink to='/about'>About</CustomLink>
-</li>
-</ul>
-</div>
-</div>
-
-</nav>
-
-    );
+    <div>
+      <h1 className="font-bold text-2xl text-red-500 absolute top-8 sm:block hidden">Norwegian Wood Reveiw</h1>
+    <nav className='flex justify-end'>
+      <div onClick={() => setOpen(!open)} className="w-6 pt-2 mr-2 z-20 h-6 md:hidden">
+        {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
+      </div>
+      <ul className={`md:flex items-center absolute md:static md:bg-white md:top-20 mb-20 ease-in duration-500 
+      ${open ? 'top-10 text-center text-slate-50 bg-red-300 z-0 pb-14':'flex justify-center mt-10 top-[-120px]'}`}>
+        {routes.map((route) => (
+          <CustomLink className="pb-5" key={route.id} route={route}></CustomLink>
+        ))}
+      </ul>
+    </nav>
+    </div>
+  );
 };
-
+/* className=
+{`md:flex my-12 justify-center ease-in duration-500 ${open ? "top-6" : "top-[-120px]"}`} */
 export default Header;

@@ -4,6 +4,9 @@ import authorImage from "../Images/murakami-haruki-217x300.jpg";
 const About = () => {
     return (
         <div>
+          <div className="container mx-auto flex justify-center items-center mt-5 mb-20">
+        <h1 className="author text-9xl text-red-500 mx-auto -translate-y-6">About</h1>
+      </div>
             <div className="container mx-auto md:flex justify-center items-center  mt-5 box-border">
           <div className="w-50 mx-auto m-10 w-3/5">
             
