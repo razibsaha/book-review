@@ -1,6 +1,7 @@
 import React from "react";
 import useReviews from "../Hooks/useReviews";
 import heroImage from "../Images/norwegian-wood-cover.png";
+import Rating from 'react-rating';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
@@ -63,7 +64,11 @@ const Home = () => {
                   <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-end px-4 pt-4"></div>
                     <div class="flex flex-col items-center pb-10">
-                      <img className="-mt-5 rounded-lg mb-5" src={reviw.image} alt={reviw.image} />
+                      <img
+                        className="-mt-5 rounded-lg mb-5"
+                        src={reviw.image}
+                        alt={reviw.image}
+                      />
                       <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                         {reviw.name}
                       </h5>
@@ -72,24 +77,17 @@ const Home = () => {
                         Age : {reviw.age}
                       </span>
                       <span>
-                        <p>
-                          {reviw.rating === 5 ? (
-                            <span>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                            </span>
-                          ) : (
-                            <span className="orange">
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon>
-                              <FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon><FontAwesomeIcon icon={faStar} className="text-slate-400"></FontAwesomeIcon>
-                            </span>
-                          )}
-                        </p>
+                        <Rating
+                          initialRating={reviw.rating}
+                          emptySymbol={<FontAwesomeIcon icon={faStar} />}
+                          fullSymbol={
+                            <FontAwesomeIcon
+                              style={{ color: "#ef4444" }}
+                              icon={faStar}
+                            />
+                          }
+                          readonly
+                        ></Rating>
                       </span>
                       <span class="text-sm text-gray-500 dark:text-gray-400 p-5">
                         {reviw.review.slice(0, 300)}
